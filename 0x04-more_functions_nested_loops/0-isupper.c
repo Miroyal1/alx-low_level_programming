@@ -1,71 +1,39 @@
 #include "main.h"
-#include <stdio.h>
-
-<<<<<<< HEAD
-#include <stdio.h>
 
 
 
-=======
->>>>>>> 9adc6ecb275b513e444cb6bc93cb498772c3355a
 /**
- * main - check the code.
  *
-<<<<<<< HEAD
-<<<<<<< HEAD
- *  * main - check the code.
+ *  * _isupper - check for uppercase
  *
  *   *
  *
- *    * Return: Always 0.
+ *    * @c: character
  *
- *     */
+ *     *
+ *
+ *      * Return: 1 if it is uppercase
+ *
+ *       */
 
-int main(void)
+int _isupper(int c)
 
 {
 
-	    char c;
+		if (c >= 65 && c <= 90)
 
+				{
 
+							return (1);
 
-	        c = 'A';
+								}
 
-		    printf("%c: %d\n", c, _isupper(c));
+			else
 
-		        c = 'a';
+					{
 
-			    printf("%c: %d\n", c, _isupper(c));
+								return (0);
 
-			        return (0);
+									}
 
-=======
- * @c: character
- *
- * Return: 1 if it is uppercase
-=======
- * Return: Always 0.
->>>>>>> f93a9392cb8f56a4f00a330039ceed436a84fb7f
- */
-int main(void)
-{
-<<<<<<< HEAD
-	if (c >= 65 && c <= 90)
-	{
-		return (1);
-	}
-	else
-	{
-		return (0);
-	}
->>>>>>> 9adc6ecb275b513e444cb6bc93cb498772c3355a
-=======
-    char c;
-
-    c = 'A';
-    printf("%c: %d\n", c, _isupper(c));
-    c = 'a';
-    printf("%c: %d\n", c, _isupper(c));
-    return (0);
->>>>>>> f93a9392cb8f56a4f00a330039ceed436a84fb7f
 }
