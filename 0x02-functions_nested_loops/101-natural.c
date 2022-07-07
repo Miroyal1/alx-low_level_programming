@@ -1,81 +1,29 @@
-#include"main.h"
-
-
+#include <stdio.h>
 
 /**
- *
- *  *  * print_times_table - prints time table of n
- *
- *   *   *
- *
- *    *    * @n: takes number input
- *
- *     */
-
-
-
-void print_times_table(int n)
-
+ * * main - prints the sum of all the multiples of 3 or 5 below 1024
+ * * Return: Always 0 (Success)
+ */
+int main(void)
 {
+	unsigned long int sum_3, sum_5, totalsum;
+	int n;
 
-		int prod, mult, num;
+	sum_3 = 0;
+	sum_5 = 0;
+	totalsum = 0;
 
-
-
-			if (n <= 15 && n >= 0)
-
-					{
-
-								for (num = 0; num <= n; ++num)
-
-											{
-
-															_putchar(48);
-
-																		for (mult = 1; mult <= n; ++mult)
-
-																						{
-
-																											_putchar(',');
-
-																															_putchar(' ');
-
-
-
-																																			prod = num * mult;
-
-
-
-																																							if (prod <= 9)
-
-																																													_putchar(' ');
-
-																																											if (prod <= 99)
-
-																																																	_putchar(' ');
-
-
-
-																																															if (prod >= 100)
-
-																																																				{
-
-																																																										_putchar((prod / 100) + 48);
-
-																																																															_putchar((prod / 10) % 10 + 48);
-
-																																																																			} else if (prod <= 99 && prod >= 10)
-
-																																																																									_putchar((prod / 10) + 48);
-
-																																																																							_putchar((prod % 10) + 48);
-
-																																																																										}
-
-																					_putchar('\n');
-
-																							}
-
-									}
-
+	for (n = 0; n < 1024; ++n)
+	{
+		if ((n % 3) == 0)
+		{
+			sum_3 = sum_3 + n;
+		} else if ((n % 5) == 0)
+		{
+			sum_5 = sum_5 + n;
+		}
+	}
+	totalsum = sum_3 + sum_5;
+	printf("%lu\n", totalsum);
+	return (0);
 }
