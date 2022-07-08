@@ -1,25 +1,13 @@
 #include <unistd.h>
-
 #include "main.h"
 
-
-
 /**
+ * _putchar - writes
+ * @c: the character to print
  *
- *  * _putchar - writes
- *
- *   * @c: the character to print
- *
- *    *
- *
- *     * Return: 1
- *
- *      */
-
+ * Return: 1
+ */
 int _putchar(char c)
-
 {
-
-		return (write(1, &c, 1));
-
+	return (write(1, &c, 1));
 }
